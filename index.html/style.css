@@ -1,0 +1,234 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Estilos para el póster promocional */
+.promo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.promo-container {
+    position: relative;
+    display: inline-block;
+}
+
+.poster-img {
+    width: 60%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    max-width: 750px; /* Define un tamaño máximo para la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Redondea las esquinas de la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra para darle un toque visual */
+}
+
+.promo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para la sección Nosotros */
+.nosotros {
+    margin: 40px 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.nosotros h2 {
+    font-size: 2.5em; /* Tamaño de fuente para el título principal */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    text-align: center;
+}
+
+.mision-vision {
+    margin-top: 40px;
+}
+
+.mision, .vision {
+    margin-bottom: 20px; /* Espacio entre misión y visión */
+}
+
+.mision h3, .vision h3 {
+    font-weight: bold; /* Asegura que los títulos estén en negrita */
+    font-size: 1.8em; /* Tamaño de fuente para los títulos */
+    margin-bottom: 10px; /* Espacio debajo de los títulos */
+    color: #333; /* Color del texto del título */
+}
+
+.mision p, .vision p {
+    font-size: 1.2em; /* Tamaño de la fuente para el texto */
+    color: #555; /* Color de texto más suave */
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+/* Estilo para los precios */
+.precio {
+    font-size: 1.5em; /* Tamaño del texto */
+    font-weight: bold; /* Poner el texto en negrita */
+    color: #333; /* Color gris oscuro */
+}
+
+.precio-valor {
+    font-size: 1.8em; /* Aumentar tamaño del precio */
+    color: #28a745; /* Color verde para destacar el precio */
+    font-weight: bold; /* Negrita para el precio */
+}
+/* Estilo para los botones */
+.agregar {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.agregar:hover {
+    background-color: #218838;
+}
+
+/* Estilo para los botones ya añadidos al carrito */
+.comprar {
+    background-color: #007bff; /* Azul para el botón de comprar */
+}
+
+.comprar:hover {
+    background-color: #0056b3;
+}
+/* Estilo del formulario */
+#formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#formulario-contacto label {
+    margin-bottom: 5px;
+}
+
+#formulario-contacto input, #formulario-contacto textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#formulario-contacto button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#formulario-contacto button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo del mensaje de agradecimiento */
+#agradecimiento {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}

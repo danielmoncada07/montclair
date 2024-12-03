@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Montclair</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="Mont.png" alt="Logo de Montclair" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hombres">
+        <h2>Ropa para Hombres</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="hoodie.png" alt="Hoodie Hombre 1">
+                <p>Hoodie Hombre Crema</p> <span class="precio-valor">1,3000 HNL</span></p>
+                <button class="comprar">Comprar</button>
+                <button class="agregar" id="btn-hoodie" onclick="agregarAlCarrito('Hoodie Montclair', 500, 'btn-hoodie')">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="hoodie2.png" alt="Hoodie Hombre 2">
+                <p>Hoodie Hombre Azul</p> <span class="precio-valor">1,300 HNL</span></p>
+                <button class="comprar">Comprar</button>
+                <button class="agregar" id="btn-hoodie" onclick="agregarAlCarrito('Hoodie Montclair', 500, 'btn-hoodie')">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="camisa.png" alt="Camisa Hombre 1">
+                <p>Camisa Hombre Negra</p> <span class="precio-valor">875 HNL</span></p>
+                <button class="comprar">Comprar</button>
+                <button class="agregar" id="btn-hoodie" onclick="agregarAlCarrito('Hoodie Montclair', 500, 'btn-hoodie')">Agregar al carrito</button>
+            </div>
+            <!-- Añadir más productos según sea necesario -->
+        </div>
+    </section>
+
+    <section id="mujeres">
+        <h2>Ropa para Mujeres</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="hoodiemuj.png" alt="Hoodie Mujer 1">
+                <p>Hoodie Mujer Crema</p> <span class="precio-valor">1,3000 HNL</span></p>
+                <button class="comprar">Comprar</button>
+                <button class="agregar" id="btn-hoodie" onclick="agregarAlCarrito('Hoodie Montclair', 500, 'btn-hoodie')">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="hoodiemuj2.png" alt="Hoodie Mujer 2">
+                <p>Hoodie Mujer Azul</p> <span class="precio-valor">1,3000 HNL</span></p>
+                <button class="comprar">Comprar</button>
+                <button class="agregar" id="btn-hoodie" onclick="agregarAlCarrito('Hoodie Montclair', 500, 'btn-hoodie')">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="cammujer.png" alt="Camisa Mujer 1">
+                <p>Camisa Mujer Verde</p> <span class="precio-valor">875 HNL</span></p>
+                <button class="comprar">Comprar</button>
+                <button class="agregar" id="btn-hoodie" onclick="agregarAlCarrito('Hoodie Montclair', 500, 'btn-hoodie')">Agregar al carrito</button>
+            </div>
+            <!-- Añadir más productos según sea necesario -->
+        </div>
+    </section>
+    <section class="carrito">
+        <h3>Carrito de compras</h3>
+        <ul id="carrito-lista"></ul>
+        <p id="total">Total: 0 HNL</p>
+        <button onclick="realizarCompra()">Realizar compra</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Montclair. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Montclair</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="Mont.png" alt="Logo de Montclair" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalog.html">Catálogo</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <!-- Sección de contacto -->
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>¡Nos encantaría saber tu opinion! Por favor, completa el formulario a continuación para ponerte en contacto con nosotros:</p>
+
+    <!-- Formulario de contacto -->
+    <form id="formulario-contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar Mensaje</button>
+    </form>
+
+    <!-- Mensaje de agradecimiento -->
+    <div id="agradecimiento" style="display:none;">
+        <p>Gracias por ponerte en contacto con nosotros. ¡Te responderemos pronto!</p>
+    </div>
+</section>
+
+
+
+    <footer>
+        <p>&copy; 2024 Montclair. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
